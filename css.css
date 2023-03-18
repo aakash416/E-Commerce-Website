@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 255, 255, 0.4515056022408963) 0%,
+    rgba(255, 213, 213, 0.34226190476190477) 100%
+  );
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  cursor: pointer;
+  padding: 34px 0px;
+}
+
+.logo > p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #4a99d3;
+}
+
+.icon {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0f001a;
+  cursor: pointer;
+  padding: 34px 0px;
+}
+.icon img {
+  width: 58px;
+  height: 44px;
+}
+.register {
+  display: flex;
+  align-items: center;
+}
+.sell {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+  }
+  .icon {
+    width: 100%;
+  }
+}
+.main-banner {
+  padding: 0px 70px 74px 74px;
+}
+.banner {
+  display: flex;
+  background: #eaf6ff;
+  z-index: -1;
+  width: 100%;
+  height: 364px;
+}
+.search-bar {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+.search-bar p {
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.product-search {
+  display: flex;
+  border: 2px solid #fc0b0d;
+  border-radius: 20px;
+  align-items: center;
+  padding: 16px;
+  margin: auto;
+  max-width: 400px;
+  justify-content: space-between;
+}
+
+.product-search .search {
+  width: 66px;
+  height: 30px;
+}
+.product-search > input {
+  width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #004b84;
+  outline: none;
+  border: none;
+  background: #eaf6ff;
+}
+.product-search .slider {
+  width: 34px;
+  height: 32px;
+}
+.banner-img {
+  width: 50%;
+}
+.banner-img img {
+  position: absolute;
+  z-index: 1;
+  margin: 56px auto -74px;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-img {
+    display: none;
+  }
+  .search-bar {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .product-search .search {
+    max-width: 66px;
+  }
+  .product-search > input {
+    width: 100px;
+  }
+  .main-banner {
+    padding: 0px;
+  }
+  .search-bar {
+    width: 100%;
+  }
+}
