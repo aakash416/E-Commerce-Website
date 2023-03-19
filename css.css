@@ -316,6 +316,7 @@
   background: #fc0b0d;
   color: #ffffff;
 }
+
 @media only screen and (max-width: 768px) {
   .view hr {
     display: none;
