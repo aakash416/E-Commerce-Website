@@ -131,7 +131,7 @@
   margin: 56px auto -74px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .banner-img {
     display: none;
   }
@@ -221,7 +221,7 @@
   }
   .box img {
     display: block;
-    margin: auto;
+    width: 100%;
   }
 }
 
@@ -290,7 +290,7 @@
   align-items: center;
 }
 .view hr {
-  width: 42%;
+  width: calc(42% - 100px);
   border: 2px solid #e5e5e5;
 }
 
@@ -316,12 +316,79 @@
   background: #fc0b0d;
   color: #ffffff;
 }
+footer {
+  display: flex;
+  background: #eaf6ff;
+  bottom: 0px;
+}
+.online-shop {
+  width: 50%;
+  margin: 60px 70px;
+}
+.online-shop h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.online-shop p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #504a41;
+  margin-right: 70px;
+}
+.information {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 70px;
+}
 
-@media only screen and (max-width: 768px) {
-  .view hr {
-    display: none;
+.contact h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.data p {
+  padding: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.about h3 {
+  padding-left: 22px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    display: block;
   }
-  .view {
-    padding: 40px 0px 70px;
+  .online-shop h2 {
+    padding-top: 52px;
+  }
+  .online-shop,
+  .information {
+    width: calc(100% - 70px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .information {
+    display: block;
+    width: 100%;
   }
 }
